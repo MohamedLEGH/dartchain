@@ -43,7 +43,8 @@ class Block {
     return string;
   }
 
-  void addTimestamp(timedata) {
-    timestamp = timedata;
+  void addTransaction(Transaction tx) {
+    tx.tx_number = transactions.length;
+    transactions.add(tx);
   }
 }
